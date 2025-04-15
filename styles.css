@@ -1,0 +1,156 @@
+/* Reset e estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Header Styles */
+.main-header {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Top */
+.header-top {
+    background-color: #F3F3F3;
+    padding: 0.5rem 0;
+    font-size: 0.875rem;
+}
+
+.header-top .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.date-location {
+    display: flex;
+    gap: 1rem;
+    color: #333;
+}
+
+.currency-info {
+    display: flex;
+    gap: 1rem;
+}
+
+.currency {
+    display: flex;
+    align-items: center;
+}
+
+.currency.up::after {
+    content: "▲";
+    color: #4CAF50;
+    margin-left: 4px;
+    font-size: 0.75rem;
+}
+
+.currency.down::after {
+    content: "▼";
+    color: #F44336;
+    margin-left: 4px;
+    font-size: 0.75rem;
+}
+
+/* Header Main */
+.header-main {
+    padding: 1rem 0;
+}
+
+.header-main .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.search-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.logo img {
+    height: 46px;
+}
+
+.social-nav {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-link img {
+    width: 34px;
+    height: 34px;
+    transition: opacity 0.2s;
+}
+
+.social-link:hover img {
+    opacity: 0.8;
+}
+
+/* Header Bottom */
+.header-bottom {
+    border-top: 1px solid #eee;
+    padding: 1rem 0;
+}
+
+.header-bottom .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-link.active {
+    font-weight: 600;
+    color: #000;
+}
+
+.nav-icon {
+    width: 24px;
+    height: 28px;
+}
+
+.separator {
+    color: #666;
+}
+
+.category-tag {
+    color: #E91E63;
+    font-weight: 600;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+}
